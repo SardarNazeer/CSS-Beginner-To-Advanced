@@ -1,0 +1,27 @@
+.hero{
+    background-color: rgb(221, 215, 215);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero .hero-heading{
+    text-decoration: underline;
+    font-size: 30px;
+    color: red;
+}
+
+.hero .hero-para{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+}
+
+.hero .hero-btn{
+    background-color: skyblue;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+}

@@ -1,0 +1,557 @@
+MASTERING CSS BASICS
+
+1.UNDERSTANDING CSS
+
+CSS stands for Cascading Style Sheets. It is a language used to style
+and design web pages written in HTML.
+
+CSS controls how elements look on a website, including:
+
+Colors
+Fonts
+Spacing
+Layout
+Animations
+Responsive design for mobile devices
+
+Why “Cascading”?
+
+The word cascading means styles can come from multiple places and are applied based on priority rules.
+
+
+What CSS Works With
+
+CSS is usually used together with:
+
+HTML → structure/content
+JavaScript → behavior/interactivity
+
+Think of it like:
+
+HTML = skeleton
+CSS = clothing/design
+JavaScript = movement/actions
+
+CSS Syntax
+
+CSS likhne ka basic structure:
+
+selector {
+  property: value;
+}
+
+Example:
+
+h1 {
+  color: blue;
+  font-size: 40px;
+}
+
+2.ADDING CSS
+
+Types of CSS
+Inline CSS – inside an HTML tag
+Internal CSS – inside a <style> tag
+External CSS – stored in a separate .css file (most common)
+
+CSS Add Karne Ke 3 Tarike
+(1) Inline CSS
+
+HTML tag ke andar.
+
+<h1 style="color:red;">Hello</h1>
+Problem
+Code messy ho jata hai
+Professional projects me avoid karte hain
+(2) Internal CSS
+
+HTML ke <style> tag me.
+
+<head>
+  <style>
+    h1{
+      color: blue;
+    }
+  </style>
+</head>
+(3) External CSS (Most Important)
+
+Separate .css file banti hai.
+
+HTML:
+
+<link rel="stylesheet" href="style.css">
+
+style.css:
+
+h1{
+  color: green;
+}
+
+Professional projects me mostly ye use hota hai.
+
+3.SELECTOR & PROPERTIES
+
+Selectors decide karte hain kis element ko style dena hai.
+
+(1) Element Selector
+p{
+  color:red;
+}
+
+Sab <p> tags red ho jayenge.
+
+(2) Class Selector
+
+HTML:
+
+<div class="box"></div>
+
+CSS:
+
+.box{
+  background: yellow;
+}
+
+Class . se start hoti hai.
+
+(3) ID Selector
+
+HTML:
+
+<h1 id="title">Hello</h1>
+
+CSS:
+
+#title{
+  color: purple;
+}
+
+ID # se start hoti hai.
+
+4.COLORS
+
+Color ka use:
+
+text ka color
+background ka color
+border ka color
+shadow colors
+
+Colors in CSS
+h1{
+  color:red;
+}
+Color Types
+Named Colors
+color: blue;
+HEX Colors
+color: #ff0000;
+
+| Color | HEX     |
+| ----- | ------- |
+| Red   | #ff0000 |
+| Green | #00ff00 |
+| Blue  | #0000ff |
+| White | #ffffff |
+| Black | #000000 |
+
+
+RGB
+color: rgb(255,0,0);
+
+255 red
+0 green
+0 blue
+
+Result = red color
+
+RGBA
+
+A = alpha (opacity/transparency)
+
+h1{
+  color: rgba(255,0,0,0.5);
+}
+
+0.5 = semi transparent
+
+Values:
+
+1 = full visible
+0 = invisible
+
+5.TEXT STYLING
+
+Fonts decide karte hain text kaisa dikhega.
+
+Font Size
+p{
+  font-size:20px;
+}
+
+Text bada hojayega.
+
+Units
+Unit	Meaning
+px	pixels
+rem	responsive size
+%	percentage
+
+Beginners mostly px use karte hain.
+
+Font Family
+p{
+  font-family:Arial;
+}
+Multiple Fonts
+p{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+Agar Arial na ho to next font use hoga.
+
+Font Weight
+
+Text ki thickness.
+
+p{
+  font-weight:bold;
+}
+Values
+Value	Meaning
+normal	normal
+bold	thick
+100-900	custom thickness
+Font Style
+p{
+  font-style:italic;
+}
+
+Italic text.
+
+TEXT STYLING
+Text Align
+h1{
+  text-align:center;
+}
+Values
+Value	Meaning
+left	left side
+center	center
+right	right side
+Text Decoration
+a{
+  text-decoration:none;
+}
+
+Links ki underline remove hojati hai.
+
+Underline Example
+h1{
+  text-decoration:underline;
+}
+Text Transform
+h1{
+  text-transform:uppercase;
+}
+Values
+Value	Result
+uppercase	ABC
+lowercase	abc
+capitalize	First Letter Capital
+Letter Spacing
+
+Letters ke darmiyan gap.
+
+h1{
+  letter-spacing:5px;
+}
+Line Height
+
+Lines ke darmiyan spacing.
+
+p{
+  line-height:30px;
+}
+Text Shadow
+h1{
+  text-shadow:2px 2px 5px gray;
+}
+
+Format:
+
+horizontal vertical blur color
+
+6.BACKGROUNDS
+
+Background ka matlab element ke peeche ka area.
+
+Background Color
+body{
+  background-color: lightblue;
+}
+
+Poore page ka background blue ho jayega.
+
+Difference
+Property	Kaam
+color	text color
+background-color	background color
+
+Example:
+
+h1{
+  color:white;
+  background-color:black;
+}
+
+White text + black background
+
+Background Image
+body{
+  background-image:url("image.jpg");
+}
+Background Repeat
+
+Image repeat hoti hai by default.
+
+body{
+  background-repeat:no-repeat;
+}
+Background Size
+body{
+  background-size:cover;
+}
+cover
+
+Poora screen fill karega.
+
+Background Position
+body{
+  background-position:center;
+}
+
+Image center me ajayegi.
+
+ShortHand Background
+body{
+  background: black url("img.jpg") no-repeat center;
+}
+
+Ek line me multiple properties.
+
+7.BORDERS & OUTLINES
+
+Border aur outline dono element ke around line banate hain, lekin dono me important difference hota hai.
+
+1. BORDER IN CSS
+
+Border element ke content aur margin ke beech me hota hai.
+
+Basic Border Syntax
+div{
+  border:2px solid black;
+}
+Breakdown
+Part	Meaning
+2px	border thickness
+solid	border style
+black	border color
+Border Styles
+Solid Border
+div{
+  border:3px solid red;
+}
+
+Straight line.
+
+Dashed Border
+div{
+  border:3px dashed blue;
+}
+
+Broken lines.
+
+Dotted Border
+div{
+  border:3px dotted green;
+}
+
+Dots wali border.
+
+Double Border
+div{
+  border:5px double black;
+}
+
+Double line.
+
+Groove Border
+div{
+  border:5px groove gray;
+}
+
+3D effect.
+
+Individual Side Borders
+Top Border
+div{
+  border-top:4px solid red;
+}
+Bottom Border
+div{
+  border-bottom:4px solid blue;
+}
+Left Border
+div{
+  border-left:4px solid green;
+}
+Right Border
+div{
+  border-right:4px solid black;
+}
+Border Width
+div{
+  border-width:5px;
+}
+Border Color
+div{
+  border-color:red;
+}
+Border Radius (VERY IMPORTANT)
+
+Corners ko round karta hai.
+
+6
+div{
+  border-radius:10px;
+}
+Circle Banana
+img{
+  border-radius:50%;
+}
+
+Mostly profile pictures me use hota hai.
+
+Different Radius
+div{
+  border-radius:10px 20px 30px 40px;
+}
+
+Order:
+
+top-left
+top-right
+bottom-right
+bottom-left
+OUTLINE IN CSS
+
+Outline bhi border jaisi line hoti hai, lekin:
+
+ye border ke bahar hoti hai
+layout size affect nahi karti
+Basic Outline
+div{
+  outline:3px solid red;
+}
+Difference Between Border & Outline
+6
+Border	Outline
+element size affect karta hai	size affect nahi karta
+box model ka part hai	box model ka part nahi
+har side alag control kar sakte	mostly outside line
+rounded ho sakta	radius directly nahi hoti
+Outline Offset
+
+Outline aur border ke darmiyan gap.
+
+div{
+  border:2px solid black;
+  outline:3px solid red;
+  outline-offset:10px;
+}
+Focus Outline
+
+Inputs pe default outline aati hai.
+
+input:focus{
+  outline:none;
+}
+Important Note
+
+outline:none;
+
+Accessibility ke liye carefully use karo, kyunki keyboard users focus outline se navigation samajhte hain.
+
+Better:
+
+input:focus{
+  outline:2px solid blue;
+}
+Border Shorthand
+div{
+  border:2px solid black;
+}
+
+Equivalent to:
+
+div{
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+}
+COMPLETE EXAMPLE
+
+HTML:
+
+<div class="box">
+  Hello
+</div>
+
+CSS:
+
+.box{
+  width:200px;
+  padding:20px;
+  margin:50px;
+
+  border:4px solid black;
+
+  border-radius:15px;
+
+  outline:3px dashed red;
+
+  outline-offset:10px;
+}
+Real Life Uses
+Feature	Use
+border	cards, buttons, navbar
+border-radius	modern UI
+outline	focus effects
+outline-offset	stylish effects
+Mini Practice Tasks
+Task 1
+
+Create:
+
+red solid border
+rounded corners
+Task 2
+
+Create:
+
+dashed outline
+outline offset
+Task 3
+
+Create a circular profile image:
+
+border-radius:50%;
+Most Important Properties
+Property	Purpose
+border	full border
+border-radius	round corners
+border-top	top border
+outline	outer line
+outline-offset	gap outside border

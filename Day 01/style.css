@@ -1,0 +1,45 @@
+/* CSS BASICS  */
+
+/* CSS = Selector + {property} */
+
+h1{
+    background-color: black;
+    color: aliceblue;
+    font-size: 30;
+}
+
+/* element selector > html tag p styling lagana  */
+
+h2{
+    color: antiquewhite;
+    background-color: blue;
+}
+
+/* class selector > . se denote karte hai or ap multiple element ko same class de skte ho  */
+
+.para{
+    background-color: crimson;
+    color: antiquewhite;
+}
+
+/* id selector > # se denote karte hai, aur ye unique huti hai ap ek he element ko de skte ho  */
+
+#newpara{
+    background-color: darkblue;
+    color: white;
+}
+
+/* hex color > hexa decimal # ke sath 6 digit  */
+
+/* color me huty 3 color red green blue  */
+/* shour ke 2 red bad ke 2 green last ke do blue  */
+
+/* rgb > red,green, blue  */
+/* hsl > hue, saturation, lightness  */
+
+p{
+    /* color: #0000ff; */
+    /* color: rgb(144, 0, 0); */
+    /* color: hsl(0, 100%, 50%); */
+    color: hsla(0, 100%, 50%, 0.8);
+}
