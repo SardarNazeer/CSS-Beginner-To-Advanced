@@ -8,3 +8,17 @@ ap chaho ye same huni chaiye responsive me chahe jab bhi ho  */
 /* 1em = 16px */
 /* when to use > jab apko pata hu jo bhi sizing hu uske container ke related ho  */
 /* jese he screensize barhe chota ya barha ho  */
+
+/* vh (viewport height) and vw (viewport width) */
+
+/* apke screen ke size ke mutabiq.
+for example apne likha 10vw to wo apke screen ki 10& width lega */
+
+/* use case > responsive design me  */
+
+/* font weight > apka text kitna thick or bold rahega  */
+
+/* font style > hamara text kesa dikhega like italic, */
+
+/* text align > apka text screen ke kis tarf rahega like left,right, center  */
+

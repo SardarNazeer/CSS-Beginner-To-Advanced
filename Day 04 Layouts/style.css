@@ -1,0 +1,68 @@
+/* Layout */
+
+/* CSS Layout web page ke elements ko arrange karne ke liye use hota hai. */
+
+/* Box Model  */
+
+/* jo bhi ap content likhoge wo ek rectangle box me huga dikhega nahi box  */
+
+/* content > kuch bhi hu skta hai like text,image etc  */
+/* padding >  is box ke ander content ko spacing dena */
+
+/* margin > box ko bahir se space dena  */
+
+/* border > line add karna box ki  */
+
+/* imp bat > jitna size huga apke box aur jo padding or border ka size huga, 
+woh apke actual box ke size me add hujaega  */
+
+/* for example size 200px + 10px padding + 10px border = 220px size  */
+
+h1{
+    /* left right top bottom  */
+    /* padding: 50px;   */
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    width: 100px;
+}
+
+/* width & height */
+
+/* box ki size control karna  */
+
+/* width > chorai elements ya tags ki  */
+
+/* height > lambai elements ya tags ki  */
+
+/* max > zyada se zyada height ya width  */
+
+/* min > kam se kam height ya width  */
+
+/* overflow > box full hugaya to baki ke content ka kya karna hai. */
+
+p{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 4px;
+
+    width: 300px;
+    height: 150px;
+    max-width: 500px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+/* Display Properties  */
+
+
+/* Positioning  */
+
+
+/* Mini Card Project  */
+
