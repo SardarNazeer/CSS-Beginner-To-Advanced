@@ -1,0 +1,61 @@
+/* Positions */
+
+/* ap apne element ko break karke page me kahi bhi set kar skte ho  */
+
+/* static > default hai, element jaha hai wahi rahega. */
+
+/* relative > ye uski normal space se thori se move kr dega element ko. */
+
+/* absolute > ap kisi box ya page ke ander apne element ki position change kr skte hai */
+
+/* fixed > apka element page pe fixed rahega uper jao ya niche apni jagha pe rahega.  */
+
+/* sticky > page ke scroll ke sath move karega.  */
+
+body{
+    height: 1500px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.static{
+    background-color: aqua;
+    position: static;
+    top: 20px;
+}
+
+.relative{
+    background-color: blueviolet;
+    position: relative;
+    width: 150px;
+    top: 20px;
+    left: 340px;
+}
+
+.parent{
+    background-color: gray;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.parent .absolute{
+    background-color: burlywood;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.sticky{
+    background-color: greenyellow;
+    position: sticky;
+    top: 0;
+}
+
+.fixed{
+    background-color: red;
+    position: fixed;
+}

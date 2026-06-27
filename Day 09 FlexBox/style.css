@@ -1,0 +1,49 @@
+/* Flexbox  */
+
+/* provide perfect aligment also vertically  */
+/* auto adjustment wala feature for all devices  */
+/* navbars ko banana bht easy hugaya  */
+/* gap control bhi mil jata hai  */
+/* full control of direction  */
+/* automatic centering > kuch bhi center kr skte ho kahi pe bhi.  */
+
+
+/* containers/items */
+/* main axis (row) / cross axis (coloumn) */
+/* justify content  */
+/* align item  */
+/* mini navbar project  */
+
+
+/* display flex > isse tamam item ek line me side by side ajate hai.  */
+/* sare item same line me rahenge  */
+/* apke item ab flexible item hai  */
+/* flex 1 se tamam boxes ko same coloumn me divide kardo  */
+
+/* justify content is for main axis (row)  */
+
+/* align item is for cross axis (coloum) */
+
+body{
+    margin: 50px;
+}
+
+.container{
+    display: flex;
+    /* flex-direction > flex ki direction kya hugi  */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.box{
+    margin: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
