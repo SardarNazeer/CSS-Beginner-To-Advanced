@@ -1,0 +1,36 @@
+/* grid  */
+
+/* layout system, complex layout  */
+/* grid me at the same times ap item ko row or coloum me arrange kr skte ho  */
+
+/* always define the container first, container ko display grid dena hai  */
+/* grid is perfect for multi row layout k liye  */
+/* wrapper divs ki quantity reduce kr dega  */
+/* chote se start karo bad me usko expand karo  */
+/* grid sturcture ke liye use huga  */
+/* flexbox aligment k liye use huga  */
+
+/* fr means equal fixed width  */
+
+body{
+    background-color: bisque;
+}
+
+.container{
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 200px;
+    gap: 10px;
+}
+
+.item{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}

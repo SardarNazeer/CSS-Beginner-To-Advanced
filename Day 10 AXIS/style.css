@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+    padding: 40px;
+    background-color: rgba(244, 243, 243, 0.813);
+}
+
+h1{
+    font-size: 40px;
+    color: rgb(1, 1, 53);
+}
+
+.demo{
+    background-color: #fff;
+    margin-bottom: 10px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.wrapper{
+    display: flex;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+}
+
+.item{
+    background: rgb(2, 2, 62);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.item:nth-child(2){
+    background: rgb(7, 7, 245);
+}
